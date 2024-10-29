@@ -23,21 +23,22 @@
 //  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 //  SOFTWARE.
 //
+// swift-tools-version:5.3
 import PackageDescription
 
 let package = Package(
-    name: "NextLevel",
+    name: "TestPackage",
     platforms: [
       .iOS(.v14)
     ],
     products: [
-      .library(name: "NextLevel", targets: ["NextLevel"])
+      .library(name: "TestPackage", targets: ["TestPackage"])
     ],
     targets: [
       .target(
-          name: "NextLevel",
+          name: "TestPackage",
           path: "Sources"
       )
-    ],
-    swiftLanguageVersions: [.v5]
+    ]
 )
+
